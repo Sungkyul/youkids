@@ -3,7 +3,7 @@ name: "\bGithub issue template"
 about: 깃허브 이슈 등록을 위한 공통 템플릿
 title: ''
 labels: ''
-assignees: hyeonsu00, jiyuuuuun, Jyuniii, walter230
+assignees: ''
 
 ---
 
