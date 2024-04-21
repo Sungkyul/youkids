@@ -3,6 +3,7 @@
 // import { Route, Routes } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
 import Album from "./pages/Album";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div>
       <Router>
         <Routes>
+          <Route path="/Home" element={<Home />} />
           <Route path="/Album" element={<Album />} />
         </Routes>
       </Router>
