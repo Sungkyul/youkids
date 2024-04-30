@@ -1,6 +1,6 @@
 import React from "react";
 
-function Notification() {
+function Noti() {
   return (
     <div className="w-full mx-auto">
       <div className="justify-center py-4">
@@ -108,4 +108,4 @@ function Notification() {
   );
 }
 
-export default Notification;
+export default Noti;

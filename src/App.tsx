@@ -9,8 +9,9 @@ import Join_PW from "./pages/Join_PW";
 import Join_Name from "./pages/Join_Name";
 import Join_Profile from "./pages/Join_Profile";
 import Join_Face from "./pages/Join_Face";
+import Home from "./pages/Home";
 import Search from "./pages/Search";
-import Notification from "./pages/Notification";
+import Noti from "./pages/Noti";
 import Album from "./pages/Album";
 import Share_Loading from "./pages/Share_Loading";
 import Share_Code from "./pages/Share_Code";
@@ -29,8 +30,9 @@ function App() {
           <Route path="/Join_Name" element={<Join_Name />} />
           <Route path="/Join_Profile" element={<Join_Profile />} />
           <Route path="/Join_Face" element={<Join_Face />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Search" element={<Search />} />
-          <Route path="/Notification" element={<Notification />} />
+          <Route path="/Noti" element={<Noti />} />
           <Route path="/Album" element={<Album />} />
           <Route path="/Share_Loading" element={<Share_Loading />} />
           <Route path="/Share_Code" element={<Share_Code />} />
