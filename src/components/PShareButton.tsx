@@ -1,0 +1,26 @@
+import Share from "../assets/Share.svg";
+
+interface P_ShareButtonProps {
+  text: string;
+  onClick: () => void;
+}
+
+const P_ShareButton: React.FC<P_ShareButtonProps> = ({ text, onClick }) => {
+  const handleButtonClick = () => {
+    onClick();
+  };
+
+  return (
+    <div className="flex justify-center items-center">
+      <button
+        onClick={handleButtonClick}
+        className="font-bold py-2 px-4 rounded-xl inline-flex items-center bg-[#DAEBE5]"
+      >
+        <img src={Share} alt="Share Icon" className="pr-2" />
+        <p className="text-sm">사진 공유</p>
+      </button>
+    </div>
+  );
+};
+
+export default P_ShareButton;
