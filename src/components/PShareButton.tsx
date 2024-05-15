@@ -1,11 +1,11 @@
 import Share from "../assets/Share.svg";
 
-interface P_ShareButtonProps {
+interface PShareButtonProps {
   text: string;
   onClick: () => void;
 }
 
-const P_ShareButton: React.FC<P_ShareButtonProps> = ({ text, onClick }) => {
+const PShareButton: React.FC<PShareButtonProps> = ({ text, onClick }) => {
   const handleButtonClick = () => {
     onClick();
   };
@@ -23,4 +23,4 @@ const P_ShareButton: React.FC<P_ShareButtonProps> = ({ text, onClick }) => {
   );
 };
 
-export default P_ShareButton;
+export default PShareButton;

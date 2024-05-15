@@ -1,11 +1,11 @@
 import Down from "../assets/Down.svg";
 
-interface P_DownButtonProps {
+interface PDownButtonProps {
   text: string;
   onClick: () => void;
 }
 
-const P_DownButton: React.FC<P_DownButtonProps> = ({ text, onClick }) => {
+const PDownButton: React.FC<PDownButtonProps> = ({ text, onClick }) => {
   const handleButtonClick = () => {
     onClick();
   };
@@ -23,4 +23,4 @@ const P_DownButton: React.FC<P_DownButtonProps> = ({ text, onClick }) => {
   );
 };
 
-export default P_DownButton;
+export default PDownButton;
