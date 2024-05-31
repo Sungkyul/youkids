@@ -1,8 +1,8 @@
 import React from "react";
 import 홈하단버튼 from "../assets/홈하단버튼.svg"; // isOpen일 때 보여줄 이미지
 import 홈하단닫기 from "../assets/홈하단닫기.svg"; // isOpen이 아닐 때 보여줄 이미지
-import PShareButton from "./PShareButton";
-import PDownButton from "./PDownButton";
+import PShareButton from "./PShareButton.tsx";
+import PDownButton from "./PDownButton.tsx";
 
 interface FixedButtonProps {
   isOpen: boolean;

@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         neutral: {
+          100: "#F5F5F5",
           900: "#111111",
         },
         stone: {
@@ -12,6 +13,9 @@ module.exports = {
         },
         emerald: {
           200: "#B5D8CB",
+        },
+        zinc: {
+          200: "#DAEBE5",
         },
         slate: {
           500: "#6490B1",

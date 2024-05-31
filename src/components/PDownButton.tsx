@@ -1,3 +1,5 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Down from "../assets/Down.svg";
 
 interface PDownButtonProps {
@@ -6,7 +8,10 @@ interface PDownButtonProps {
 }
 
 const PDownButton: React.FC<PDownButtonProps> = ({ text, onClick }) => {
+  const navigate = useNavigate();
+
   const handleButtonClick = () => {
+    navigate("/Down_Code");
     onClick();
   };
 

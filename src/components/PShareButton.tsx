@@ -1,3 +1,5 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import Share from "../assets/Share.svg";
 
 interface PShareButtonProps {
@@ -6,7 +8,10 @@ interface PShareButtonProps {
 }
 
 const PShareButton: React.FC<PShareButtonProps> = ({ text, onClick }) => {
+  const navigate = useNavigate();
+
   const handleButtonClick = () => {
+    navigate("/Share_Done");
     onClick();
   };
 

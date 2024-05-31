@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import profile from "../assets/profile.svg";
 import image1 from "../assets/image1.svg";
 import image2 from "../assets/image2.svg";
@@ -8,6 +9,7 @@ import Notification from "../components/Notification";
 import FixedButton from "../components/FixedButton";
 
 function Home() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleOpen = () => {
@@ -22,13 +24,13 @@ function Home() {
           <SearchButton
             text={""}
             onClick={() => {
-              throw new Error("Function not implemented.");
+              navigate("/Search");
             }}
           />
           <Notification
             text={""}
             onClick={() => {
-              throw new Error("Function not implemented.");
+              navigate("/Noti");
             }}
           />
         </div>
